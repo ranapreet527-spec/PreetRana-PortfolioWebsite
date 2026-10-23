@@ -726,3 +726,47 @@ a {
     transform: none;
   }
 }
+
+/* Contact section layout */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.contact-info {
+  min-width: 0;
+}
+
+/* Contact form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 28px;
+  box-sizing: border-box;
+  gap: 10px;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 7px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 650px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
