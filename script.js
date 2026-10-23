@@ -48,7 +48,11 @@ contactForm.addEventListener("submit", (event) => {
     "Opening your email application. Replace the sample recipient in script.js before publishing.";
   const gmailURL =
     `https://mail.google.com/mail/?view=cm&fs=1` +
+<<<<<<< HEAD
+    `&to=${encodeURIComponent("ranapreet527@gmail.com")}` +
+=======
     `&to=${encodeURIComponent("ranapreet557@gmail.com")}` +
+>>>>>>> origin/main
     `&su=${encodeURIComponent(subject)}` +
     `&body=${encodeURIComponent(body)}`;
 
